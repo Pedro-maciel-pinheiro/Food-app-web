@@ -6,7 +6,7 @@ export default function ContactUs() {
   return (
     <section className="text-center">
         <div className="mt-8 mb-8">
-        <SectionText subText={""} mainText={"Hello "}/>
+        <SectionText subText={"--"} mainText={"Hello "}/>
         </div>
    
       <p>My name is Pedro I'm a front end developer</p>

@@ -5,9 +5,8 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 import { SyntheticEvent, useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
-import Link from "next/link";
-import Tabs from "@/components/layout/Tabs";
 
+import Tabs from "@/components/layout/Tabs";
 
 export default function Profile() {
   const session = useSession();
@@ -17,7 +16,7 @@ export default function Profile() {
   const [city, SetCity] = useState("");
   const [phone, SetPhone] = useState("");
   const [postalCode, SetPostalCode] = useState("");
-  const[isAdmin, SetIsAdmin] = useState("");
+  const [isAdmin, SetIsAdmin] = useState("");
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -37,9 +36,9 @@ export default function Profile() {
   const userImage = session.data?.user?.image;
   const userEmail = session.data?.user?.email;
 
-  // if (status === "loading") {
-  //   return "Loading...";
-  // }
+  if (status === "loading") {
+    return "Loading...";
+  }
 
   if (status === "unauthenticated") {
     return redirect("/login");
@@ -76,13 +75,19 @@ export default function Profile() {
         rounded-3xl
     "
       >
-         <h1 className="text-center text-orange-500 text-4xl mb-4
-       font-semibold ">Personal Info</h1>
-         <Tabs isAdmin={isAdmin}/>
+        <h1
+          className="text-center text-orange-500 text-4xl mb-4
+       font-semibold "
+        >
+          Personal Info
+        </h1>
+        <Tabs isAdmin={isAdmin} />
 
-        <div className="w-32 p-4  rounded-3xl mx-auto border-2 border-orange-500 
+        <div
+          className="w-32 p-4  rounded-3xl mx-auto border-2 border-orange-500 
         shadow-xl
-        ">
+        "
+        >
           {userImage ? (
             <Image
               className="rounded-xl"
@@ -129,18 +134,14 @@ export default function Profile() {
                 <p className="font-semibold">
                   City <br /> Postal
                 </p>
-                <input 
-                 
-                  
+                <input
                   type="text"
                   placeholder="City"
                   value={city}
                   onChange={(ev) => SetCity(ev.target.value)}
                 />
 
-                <input 
-                  
-                  
+                <input
                   type="text"
                   placeholder="Postal code"
                   value={postalCode}

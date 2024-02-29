@@ -19,10 +19,11 @@ export default function Hero() {
         <div>
           
           <p className="my-6 text-gray-500 text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ex
-          doloremque est, tempora voluptatem sit ea sequi voluptas ratione natus
-          repellat quasi dolores ipsum veritatis alias amet, officiis
-          perspiciatis quibusdam.
+          Welcome to "Pinheiro Ferraço restaurant " where passion meets flavor. 
+           dolor sit amet, consectetur adipisicing elit. 
+          Quisquam voluptatem, quo ratione quod officiis dolorum similique alias, 
+          facilis minus incidunt rem, velit atque deserunt!
+
         </p>
         </div>
        

@@ -7,8 +7,8 @@ import {
   useState,
 } from "react";
 import { ShoppingCart } from "@/context/shop/ShoppingCart";
-import { useLocalStorage } from "../hooks/useLocalStorage";
-import { useRouter } from "next/navigation";
+import { useLocalStorage } from "@/hooks/useLocalStorage";
+
 
 type ShoppingCartProviderProps = {
   children: ReactNode;
@@ -36,7 +36,7 @@ export function useShoppingCart() {
   return useContext(ShoppingCartContext);
 }
 export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
-  // const router = useRouter();
+ 
   const [isOpen, setIsOpen] = useState(true);
 
   const [cartItems, setCartItems] = useLocalStorage<CartItem[]>(
@@ -90,13 +90,7 @@ export function ShoppingCartProvider({ children }: ShoppingCartProviderProps) {
       return currItems.filter((item) => item.id !== id);
     });
   }
-  // useEffect(() => {
-  //   // Conditionally navigate to the /cart page when the cart is open
-  //   if (isOpen) {
-  //     router.push("/cart");
-  //   }
-  // }, [isOpen]);
-  
+ 
   return (
     <ShoppingCartContext.Provider
       value={{

@@ -1,7 +1,7 @@
 import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { CartItem } from "@/context/shop/CartItem";
-import storeItems from "@/data/pizza.json";
+import storeItems from "@/data/allFoods.json";
 import toast, { Toaster } from "react-hot-toast";
 
 type ShoppingCartProps = {

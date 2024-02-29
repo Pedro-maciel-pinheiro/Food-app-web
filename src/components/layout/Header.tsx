@@ -14,23 +14,35 @@ export default function Header() {
 
   return (
     <header className="flex items-center justify-between mb-8 border-b">
-      <nav className="flex items-center gap-4
-       text-gray-500 font-semibold text-lg ">
-         <Link
+      <nav
+        className="flex items-center gap-4
+       text-gray-500 font-semibold text-lg "
+      >
+        <Link
           className="flex- items-center 
        text-orange-500 italic"
           href={"/"}
         >
           <Image src="/imgs/Logo.png" alt="" width={64} height={64} />
-        </Link> 
-        <Link href={"/"}>Home</Link>
-        <Link href={"/menu"}>Menu</Link>
-        <Link href={"/about"}>About</Link>
-        <Link href={"/contact"}>Contact</Link>
+        </Link>
+        <Link className="hover:text-orange-500" href={"/"}>
+          Home
+        </Link>
+        <Link className="hover:text-orange-500" href={"/menu"}>
+          Menu
+        </Link>
+        <Link className="hover:text-orange-500" href={"/about"}>
+          About
+        </Link>
+        <Link className="hover:text-orange-500" href={"/contact"}>
+          Contact
+        </Link>
       </nav>
       {/* ///////// Login */}
-      <nav className="flex items-center gap-4 text-gray-600
-       font-semibold text-sm ml-48">
+      <nav
+        className="flex items-center gap-4 text-gray-600
+       font-semibold text-sm ml-48"
+      >
         {status === "authenticated" && (
           <>
             <Link href={"/profile"}> {userName}</Link>
@@ -44,28 +56,27 @@ export default function Header() {
           </>
         )}
         <div className="flex gap-2  justify-center items-center">
-        {status === "unauthenticated" && (
-          <>
-            <Link
-              className="transition-all active:translate-y-1"
-              href={"/login"}
-            >
-              Login
-            </Link>
-            <Link
-              href={"/register"}
-              className="bg-orange-500 rounded-full
+          {status === "unauthenticated" && (
+            <>
+              <Link
+                className="transition-all active:translate-y-1"
+                href={"/login"}
+              >
+                Login
+              </Link>
+              <Link
+                href={"/register"}
+                className="bg-orange-500 rounded-full
               transition-all active:translate-y-1
                text-white px-4  py-1"
-            >
-              Register
-            </Link>
-          </>
-        )}
+              >
+                Register
+              </Link>
+            </>
+          )}
         </div>
-       
       </nav>
-      <Cart/>
+      <Cart />
     </header>
   );
 }

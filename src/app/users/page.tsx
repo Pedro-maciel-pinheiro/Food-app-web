@@ -17,7 +17,7 @@ export default function Users() {
           <label className="font-semibold">Admin?</label>
           <input type="checkbox" value={""} />
           <button className="w-20 h-10" type="submit">
-            {" "}
+          &quot;
             <Settings2 />
           </button>
           <button

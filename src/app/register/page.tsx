@@ -44,7 +44,7 @@ export default function RegisterPage() {
       {userCreated && (
         <div className="my-4 text-center">
           User created.<br />
-          Now you can{' '}
+          Now you can&quot;
           <Link className="underline" href={'/login'}>Login &raquo;</Link>
         </div>
       )}

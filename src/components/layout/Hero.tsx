@@ -49,7 +49,7 @@ export default function Hero() {
       <div className="relative justify-center items-center">
         <Image
           className="hover:animate-pulse "
-          src={"/pizza.webp"}
+          src={"/imgs/pizza.webp"}
           alt={"pizza"}
           objectFit="contain"
           layout="fill"

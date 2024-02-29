@@ -1,6 +1,7 @@
 import { useShoppingCart } from "@/context/ShoppingCartContext";
 import storeItems from "@/data/allFoods.json";
 import { formatCurrency } from "@/utils/formatCurrency";
+import Image from "next/image";
 
 type CartItemProps = {
   id: number;
@@ -16,10 +17,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
     <>
       <div className="border-2 rounded-xl
       shadow-xl shadow-black/50">
-        <img className="mx-auto"
-          src={item.imgUrl}
-          style={{ width: "125px", height: "75px", objectFit: "cover" }}
-        />
+        <Image className="mx-auto" src={item.imgUrl} width={125} height={125} alt={""}/>
         <div className=" ">
           <div>
             {item.name}

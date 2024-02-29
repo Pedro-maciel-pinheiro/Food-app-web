@@ -1,4 +1,4 @@
-import MenuItem from "@/components/menu-items-list/MenuItem";
+
 import SectionText from "./SectionText";
 import { StoreItem } from "../StoreItem";
 import storeItems from "@/data/pizza.json"

@@ -7,7 +7,7 @@ import * as mongoose from "mongoose";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import clientPromise from "@/libs/mongoConnect";
 
-export const authOptions = {
+ const authOptions = {
   secret: process.env.SECRET,
   adapter: MongoDBAdapter(clientPromise),
   providers: [
@@ -45,6 +45,6 @@ export const authOptions = {
   ],
 };
 
-export const handler = NextAuth(authOptions);
+ const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };

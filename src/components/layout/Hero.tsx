@@ -19,7 +19,7 @@ export default function Hero() {
         <div>
           
           <p className="my-6 text-gray-500 text-sm">
-          Welcome to "Pinheiro Ferraço restaurant " where passion meets flavor. 
+          Welcome to Pinheiro Ferraço restaurant  where passion meets flavor. 
            dolor sit amet, consectetur adipisicing elit. 
           Quisquam voluptatem, quo ratione quod officiis dolorum similique alias, 
           facilis minus incidunt rem, velit atque deserunt!

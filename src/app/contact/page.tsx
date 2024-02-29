@@ -6,12 +6,12 @@ export default function ContactUs() {
   return (
     <section className="text-center">
         <div className="mt-8 mb-8">
-        <SectionText subText={"--"} mainText={"Hello "}/>
+        <SectionText subText={""} mainText={"Hello "}/>
         </div>
    
-      <p>My name is Pedro I'm a front end developer</p>
+      <p className="font-semibold " >My name is Pedro I&apos;m a front-end developer</p>
       <br />
-      <p>Contact me and check out my other projects </p>
+      <p className="font-semibold " >Contact me and check out my other projects </p>
       <br />
       <div className="flex gap-8 justify-center items-center mx-auto mt-16">
         <div className="">

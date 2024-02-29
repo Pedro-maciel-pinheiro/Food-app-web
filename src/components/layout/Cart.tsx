@@ -18,7 +18,7 @@ export default function Cart() {
     "
           >{cartQuantity}</div>
           <button onClick={openCart}>
-            <Link href={"/cart"}>
+            <Link className="w-full" href={"/cart"}>
               <Shopcart />
             </Link>
           </button>

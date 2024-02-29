@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { ShoppingCartProvider, useShoppingCart } from "@/context/ShoppingCartContext";
+import toast, { Toaster } from "react-hot-toast";
 
 type StoreItemProps = {
   id: number;
@@ -18,7 +19,7 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
     decreaseCartQuantity,
     removeFromCart,
   } = useShoppingCart() 
-  
+  const sucess = toast.success('Successfully toasted!')
   const quantity =  getItemQuantity(id)
   return (
     <>
@@ -47,19 +48,21 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
           {quantity === 0 ? (
             <>
               <button onClick={() => increaseCartQuantity(id)} className="bg-orange-500 text-white rounded-full px-4 py-2 mt-4">
-                {formatCurrency(price)}
+                {formatCurrency(price)} 
+                
               </button>
             </>
           ) : (
             <>
               <div className="flex gap-8 mt-4">
-                <button onClick={() => increaseCartQuantity(id)} className="bg-green-600 text-white">+</button>
+                <button onClick={() => increaseCartQuantity(id) } className="bg-green-600 text-white">+
+                 </button>
                 <div className="flex items-center justify-center">
                   {quantity}
                 </div>
                 <button onClick={() => decreaseCartQuantity(id)} className="bg-red-700 text-white">-</button>
               </div>
-              {/* <button>remove</button> */}
+             
             </>
           )}
            

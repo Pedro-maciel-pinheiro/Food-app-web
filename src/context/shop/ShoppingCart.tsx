@@ -2,6 +2,7 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { CartItem } from "@/context/shop/CartItem";
 import storeItems from "@/data/pizza.json";
+import toast, { Toaster } from "react-hot-toast";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -30,8 +31,8 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
             }, 0)
           )}
         </div>
-        <button className="mt-8" type="submit">
-          send your order
+        <button onClick={()=> toast.success("Order Send")} className="mt-8" type="submit">
+          send your order <Toaster position="top-center" />
         </button>
       </div>
     </>

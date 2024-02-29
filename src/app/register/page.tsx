@@ -44,8 +44,8 @@ export default function RegisterPage() {
       {userCreated && (
         <div className="my-4 text-center">
           User created.<br />
-          Now you can&quot;
-          <Link className="underline" href={'/login'}>Login &raquo;</Link>
+          Now you can
+          <Link className="underline" href={'/login'}>Login</Link>
         </div>
       )}
       {error && (
@@ -75,8 +75,8 @@ export default function RegisterPage() {
           Register with google
         </button>
         <div className="text-center my-4 text-gray-500 border-t pt-4">
-          Existing account?{' '}
-          <Link className="underline" href={'/login'}>Login here &raquo;</Link>
+          Existing account?
+          <Link className="underline" href={'/login'}>Login here </Link>
         </div>
       </form>
     </section>

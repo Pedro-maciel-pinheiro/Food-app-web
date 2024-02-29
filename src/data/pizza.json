@@ -1,0 +1,50 @@
+
+[
+    {
+        "id":1,
+        "name": "MAC & CHEESE",
+        "price": 25.99,
+        "imgUrl":"/imgs/pizza1.webp"
+
+    },
+    {
+        "id":2,
+        "name": "SUPREME",
+        "price": 14.99,
+        "imgUrl":"/imgs/pizza2.webp"
+
+
+    },
+    {
+        "id":3,
+        "name": "BUFFALO CHICKEN",
+        "price": 16.99,
+        "imgUrl":"/imgs/pizza3.webp"
+
+
+    },
+    {
+        "id":4,
+        "name": "ZESTY CHEDDAR",
+        "price": 14.99,
+        "imgUrl":"/imgs/pizza4.webp"
+
+
+    },
+    {
+        "id":5,
+        "name": "MEAT EATER",
+        "price": 15.99,
+        "imgUrl":"/imgs/pizza5.webp"
+
+
+    },
+    {
+        "id":6,
+        "name": "BBQ PORK",
+        "price": 18.99,
+        "imgUrl":"/imgs/pizza6.webp"
+
+
+    }
+]

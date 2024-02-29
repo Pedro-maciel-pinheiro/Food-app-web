@@ -1,0 +1,147 @@
+
+[
+    {
+        "id":1,
+        "name": "MAC & CHEESE",
+        "price": 25.99,
+        "imgUrl":"/imgs/pizza1.webp"
+
+    },
+    {
+        "id":2,
+        "name": "SUPREME",
+        "price": 14.99,
+        "imgUrl":"/imgs/pizza2.webp"
+
+
+    },
+    {
+        "id":3,
+        "name": "BUFFALO CHICKEN",
+        "price": 16.99,
+        "imgUrl":"/imgs/pizza3.webp"
+
+
+    },
+    {
+        "id":4,
+        "name": "ZESTY CHEDDAR",
+        "price": 14.99,
+        "imgUrl":"/imgs/pizza4.webp"
+
+
+    },
+    {
+        "id":5,
+        "name": "MEAT EATER",
+        "price": 15.99,
+        "imgUrl":"/imgs/pizza5.webp"
+
+
+    },
+    {
+        "id":6,
+        "name": "BBQ PORK",
+        "price": 18.99,
+        "imgUrl":"/imgs/pizza6.webp"
+
+
+    },
+    
+
+    {
+        "id":7,
+        "name": "PASTA  MARINARA ",
+        "price": 18.99,
+        "imgUrl":"/imgs/pasta1.webp"
+
+    },
+    {
+        "id":8,
+        "name": "PASTA SALAD",
+        "price": 12.99,
+        "imgUrl":"/imgs/pasta2.png"
+
+    },
+    {
+        "id":9,
+        "name": "PASTA WITH ALFREDO  ",
+        "price": 11.99,
+        "imgUrl":"/imgs/pasta2.webp"
+
+
+    },
+    {
+        "id":10,
+        "name": "MIXED SALAD",
+        "price": 4.99,
+        "imgUrl":"/imgs/salads.png"
+
+
+    },
+    {
+        "id":11,
+        "name": "MEAT EATER",
+        "price": 6.99,
+        "imgUrl":"/imgs/salads.png"
+
+
+    },
+    {
+        "id":12,
+        "name": "BBQ PORK",
+        "price": 7.99,
+        "imgUrl":"/imgs/salads.png"
+
+
+    },
+
+    {
+        "id":13,
+        "name": "CINNAMON ROLLS",
+        "price": 14.55,
+        "imgUrl":"/imgs/d6.webp"
+
+    },
+    {
+        "id":14,
+        "name": "FUDGE BROWNIES",
+        "price": 7.99,
+        "imgUrl":"/imgs/d7.png"
+
+
+    },
+    {
+        "id":15,
+        "name": "GARLIC CHEESY",
+        "price": 16.99,
+        "imgUrl":"/imgs/d22.webp"
+
+
+    },
+    {
+        "id":16,
+        "name": "JALAPEÑO POPPERS",
+        "price": 14.99,
+        "imgUrl":"/imgs/d1.png"
+
+
+    },
+    {
+        "id":17,
+        "name": "PEPPERONI POPPERS",
+        "price": 15.99,
+        "imgUrl":"/imgs/d5.png"
+
+
+    },
+    {
+        "id":18,
+        "name": "BUFFALO CHICKEN",
+        "price": 18.99,
+        "imgUrl":"/imgs/d4.webp"
+
+
+    }
+]
+

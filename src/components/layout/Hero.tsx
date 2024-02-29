@@ -11,9 +11,9 @@ export default function Hero() {
         <h1 className="text-4xl font-semibold flex">
           Everything <br />
           is better <br />
-          with a{""}
+          with a
           <span className="text-orange-500">
-           {""} Pizza </span>
+            Pizza </span>
           
         </h1>
         <div>

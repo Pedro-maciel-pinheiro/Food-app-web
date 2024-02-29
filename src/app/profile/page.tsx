@@ -27,7 +27,7 @@ export default function Profile() {
           SetCity(data.city);
           SetPhone(data.phone);
           SetPostalCode(data.postalCode);
-          SetIsAdmin(data.admin);
+         
         });
       });
     }

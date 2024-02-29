@@ -14,7 +14,7 @@ export default function Menu() {
           Check out what we have
         </h1>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid w-80 mx-auto sm:max-w-xl sm:grid-cols-3 gap-4 ">
           {storeItems.map((item) => (
             <div key={item.id}>
               <StoreItem {...item} />

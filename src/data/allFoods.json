@@ -17,7 +17,7 @@
     },
     {
         "id":3,
-        "name": "BUFFALO CHICKEN",
+        "name": "BUFFALO CHIC",
         "price": 16.99,
         "imgUrl":"/imgs/pizza3.webp"
 
@@ -25,7 +25,7 @@
     },
     {
         "id":4,
-        "name": "ZESTY CHEDDAR",
+        "name": "ZESTY CHED",
         "price": 14.99,
         "imgUrl":"/imgs/pizza4.webp"
 

@@ -11,19 +11,20 @@ export default function Header() {
   const status = session?.status;
   const userData = session.data?.user;
   const userName = userData?.email;
+ 
 
   return (
-    <header className="flex items-center justify-between mb-8 border-b">
+    <header className="flex items-center justify-between mb-8 border-b">.
       <nav
-        className="flex items-center gap-4
-       text-gray-500 font-semibold text-lg "
+        className="flex items-center gap-2
+       text-gray-500 font-semibold text-base mr-auto "
       >
         <Link
           className="flex- items-center 
        text-orange-500 italic"
           href={"/"}
         >
-          <Image src="/imgs/Logo.png" alt="" width={64} height={64} />
+          <Image className="hidden" src="/imgs/Logo.png" alt="" width={64} height={64} />
         </Link>
         <Link className="hover:text-orange-500" href={"/"}>
           Home
@@ -41,7 +42,7 @@ export default function Header() {
       {/* ///////// Login */}
       <nav
         className="flex items-center gap-4 text-gray-600
-       font-semibold text-sm ml-48"
+       font-semibold text-sm mr-auto  "
       >
         {status === "authenticated" && (
           <>

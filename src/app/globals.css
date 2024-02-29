@@ -4,11 +4,16 @@
 
 
 
+
 section.hero{
     @apply grid;
     grid-template-columns: .4fr .6fr;
 }
 
+div.hero{
+    @apply grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 
 input[type="email"],

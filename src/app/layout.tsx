@@ -23,13 +23,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={roboto.className}>
         <main
-          className="max-w-4xl mx-auto border-4 border-black/80
-         p-6 shadow-xl shadow-black/50 rounded-2xl mt-2 mb-4"
+          className="max-w-5xl mx-auto border-4 border-black/80
+         p-2 shadow-xl shadow-black/50 rounded-2xl mt-2 mb-4"
         >
           <ShoppingCartProvider>
             <AppProvider>
               <Header />
-
+              
               {children}
 
               <footer className="border-t p-8 text-center mt-44 text-gray-500 ">

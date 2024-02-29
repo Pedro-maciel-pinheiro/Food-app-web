@@ -15,26 +15,37 @@ export function CartItem({ id, quantity }: CartItemProps) {
 
   return (
     <>
-      <div className="border-2 rounded-xl
-      shadow-xl shadow-black/50">
-        <Image className="mx-auto" src={item.imgUrl} width={125} height={125} alt={""}/>
+      <div
+        className="border-2 rounded-xl
+      shadow-xl shadow-black/50"
+      >
+        <Image
+          className="mx-auto"
+          src={item.imgUrl}
+          width={125}
+          height={125}
+          alt={""}
+        />
         <div className=" ">
           <div>
             {item.name}
             {quantity > 1 && (
-              <span className="text-xl" >
-              {""}  x{quantity}
+              <span className="text-xl">
+                {""} x{quantity}
               </span>
             )}
           </div>
-          <div className="flex items-center justify-center" > {formatCurrency(item.price * quantity)}</div>
+          <div className="flex items-center justify-center">
+            {" "}
+            {formatCurrency(item.price * quantity)}
+          </div>
 
-          <div className="text-sm  mx-auto w-32" >
-          <button  type="submit"  onClick={() => removeFromCart(item.id)}>Remove</button>
+          <div className="text-sm  mx-auto w-16">
+            <button type="submit" onClick={() => removeFromCart(item.id)}>
+              Remove
+            </button>
           </div>
         </div>
-        
-      
       </div>
     </>
   );

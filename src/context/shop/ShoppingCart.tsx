@@ -2,7 +2,6 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { CartItem } from "@/context/shop/CartItem";
 import storeItems from "@/data/allFoods.json";
-import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 
 type ShoppingCartProps = {
@@ -10,8 +9,8 @@ type ShoppingCartProps = {
 };
 
 export function ShoppingCart({}: ShoppingCartProps) {
-  const { removeFromCart } = useShoppingCart();
-  const { closeCart, cartItems } = useShoppingCart();
+
+  const { cartItems } = useShoppingCart();
   return (
     <>
       <section>
@@ -40,11 +39,10 @@ export function ShoppingCart({}: ShoppingCartProps) {
 
           <Link href={"/menu"}>
             <button
-               onClick={() => toast.success('order send')}
               className="mt-8"
               type="submit"
             >
-              <Toaster position="top-center" />
+              
               send your order
             </button>
           </Link>

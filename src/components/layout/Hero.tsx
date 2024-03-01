@@ -4,13 +4,22 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col md:grid grid-cols-2 justify-center items-center mt-12 ">
-      <div className="md:py-4 md:ml-16 ">
+    <section className="flex flex-col md:grid grid-cols-2 justify-center items-center mt-32 ">
+      <div className=" md:py-4 md:ml-16 ">
+      <Image
+          className="absolute right-0 mr-10 top-24 mx-auto md:hidden"
+          src={"/imgs/Logo.png"}
+          alt=""
+          width={150} height={50}
+          
+        ></Image>
         <h1 className=" text-4xl font-semibold ">
           Everything <br />
           is better <br />
           with a<span className="text-orange-500 p-2">Pizza </span>
         </h1>
+        
+        
         <div className=" md:flex">
           <p className="flex  my-6 text-gray-500 text-sm">
             Welcome to Pinheiro Ferraço restaurant where passion meets flavor.

@@ -5,7 +5,7 @@ import storeItems from "@/data/pasta.json";
 
 export default function PastaMenu() {
   return (
-    <section className="mt-16 ">
+    <section className="mt-32">
       <div>
         <MenuTabs />
         <h1

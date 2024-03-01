@@ -4,7 +4,7 @@ import storeItems from "@/data/pizza.json";
 
 export default function Menu() {
   return (
-    <section className="mt-16">
+    <section className="mt-32">
       <div>
         <MenuTabs />
         <h1

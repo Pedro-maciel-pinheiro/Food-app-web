@@ -16,7 +16,7 @@ export function ShoppingCart({}: ShoppingCartProps) {
     <>
       <div>
         <div
-          className="flex flex-wrap md:flex-row gap-4
+          className="grid grid-cols-3 gap-8
        items-center justify-center text-center "
         >
           {cartItems.map((item) => (
@@ -24,30 +24,7 @@ export function ShoppingCart({}: ShoppingCartProps) {
           ))}
         </div>
 
-        <div>
-          <div
-            className="flex items-center justify-center 
-         font-semibold text-xl mt-16 border-t"
-          >
-            Total :
-            {formatCurrency(
-              cartItems.reduce((total, cartItem) => {
-                const item = storeItems.find((i) => i.id === cartItem.id);
-                return total + (item?.price || 0) * cartItem.quantity;
-              }, 0)
-            )}
-          </div>
-
-          <Link href={"/menu"}>
-            <button
-              className="mt-8"
-              type="submit"
-            >
-              
-              send your order
-            </button>
-          </Link>
-        </div>
+        
       </div>
     </>
   );

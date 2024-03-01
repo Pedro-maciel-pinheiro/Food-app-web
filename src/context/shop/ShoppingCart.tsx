@@ -2,6 +2,7 @@ import { useShoppingCart } from "@/context/ShoppingCartContext";
 import { formatCurrency } from "@/utils/formatCurrency";
 import { CartItem } from "@/context/shop/CartItem";
 import storeItems from "@/data/allFoods.json";
+import toast, { Toaster } from "react-hot-toast";
 import Link from "next/link";
 
 type ShoppingCartProps = {
@@ -9,13 +10,13 @@ type ShoppingCartProps = {
 };
 
 export function ShoppingCart({}: ShoppingCartProps) {
-
-  const { cartItems } = useShoppingCart();
+  const { removeFromCart } = useShoppingCart();
+  const { closeCart, cartItems } = useShoppingCart();
   return (
     <>
-      <section>
+      <div>
         <div
-          className="grid grid-cols-3 gap-4
+          className="flex flex-wrap md:flex-row gap-4
        items-center justify-center text-center "
         >
           {cartItems.map((item) => (
@@ -47,7 +48,7 @@ export function ShoppingCart({}: ShoppingCartProps) {
             </button>
           </Link>
         </div>
-      </section>
+      </div>
     </>
   );
 }

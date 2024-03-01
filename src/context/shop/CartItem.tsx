@@ -40,7 +40,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
             {formatCurrency(item.price * quantity)}
           </div>
 
-          <div className="text-sm  mx-auto w-16 mt-2 mb-2 ">
+          <div className="text-sm  mx-auto w-8 mt-2 mb-2 ">
             <button type="submit" onClick={() => removeFromCart(item.id)}>
               X
             </button>

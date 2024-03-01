@@ -26,8 +26,8 @@ export default function RootLayout({
           className="max-w-5xl mx-auto border-4 border-black/80
          p-2 shadow-xl shadow-black/50 rounded-2xl mt-2 mb-4"
         >
-          <ShoppingCartProvider>
-            <AppProvider>
+          <AppProvider>
+            <ShoppingCartProvider>
               <Header />
 
               {children}
@@ -49,8 +49,8 @@ export default function RootLayout({
                   </Link>
                 </div>
               </footer>
-            </AppProvider>
-          </ShoppingCartProvider>
+            </ShoppingCartProvider>
+          </AppProvider>
         </main>
       </body>
     </html>

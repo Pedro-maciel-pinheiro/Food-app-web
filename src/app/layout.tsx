@@ -29,7 +29,7 @@ export default function RootLayout({
           <ShoppingCartProvider>
             <AppProvider>
               <Header />
-              
+
               {children}
 
               <footer className="border-t p-8 text-center mt-44 text-gray-500 ">

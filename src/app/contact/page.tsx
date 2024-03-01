@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function ContactUs() {
   return (
     <section className="text-center">
-        <div className="mt-8 mb-8">
+        <div className="mt-16 mb-8">
         <SectionText subText={""} mainText={"Hello "}/>
         </div>
    

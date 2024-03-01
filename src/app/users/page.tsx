@@ -9,7 +9,7 @@ export default function Users() {
   const session = useSession();
   const userEmail = session.data?.user?.email;
   return (
-    <section>
+    <section className="mt-16 md:1">
       <Tabs isAdmin={"true"} />
       <div className="mt-16">
         <div className="flex max-w-xl mx-auto justify-center items-center gap-4">

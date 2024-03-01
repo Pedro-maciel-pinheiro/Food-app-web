@@ -17,6 +17,10 @@ export default function Profile() {
   const [phone, SetPhone] = useState("");
   const [postalCode, SetPostalCode] = useState("");
   const [isAdmin, SetIsAdmin] = useState("");
+  const userImage = session.data?.user?.image;
+  const userEmail = session.data?.user?.email
+
+
 
   useEffect(() => {
     if (status === "authenticated") {
@@ -27,15 +31,13 @@ export default function Profile() {
           SetCity(data.city);
           SetPhone(data.phone);
           SetPostalCode(data.postalCode);
-         
+          SetIsAdmin(data.admin)
         });
       });
     }
   }, [status]);
 
-  const userImage = session.data?.user?.image;
-  const userEmail = session.data?.user?.email;
-
+  
   if (status === "loading") {
     return "Loading...";
   }
@@ -61,11 +63,11 @@ export default function Profile() {
       if (response.ok) resolve();
       else reject();
     });
-    await toast.promise(savingPromise, {
-      loading: "Saving...",
-      success: <b>Settings saved!</b>,
-      error: <b>Could not save.</b>,
-    });
+    // await toast.promise(savingPromise, {
+    //   loading: "Saving...",
+    //   success: <b>Settings saved!</b>,
+    //   error: <b>Could not save.</b>,
+    // });
   }
 
   return (
@@ -123,7 +125,7 @@ export default function Profile() {
               </div>
               <div className="flex items-center justify-center gap-2">
                 <p className="font-semibold">Phone:</p>
-                <input
+                <input disabled={true}
                   type="tel"
                   placeholder="Telephone"
                   value={phone}
@@ -134,14 +136,14 @@ export default function Profile() {
                 <p className="font-semibold">
                   City <br /> Postal
                 </p>
-                <input
+                <input disabled={true}
                   type="text"
                   placeholder="City"
                   value={city}
                   onChange={(ev) => SetCity(ev.target.value)}
                 />
 
-                <input
+                <input disabled={true}
                   type="text"
                   placeholder="Postal code"
                   value={postalCode}
@@ -150,7 +152,7 @@ export default function Profile() {
               </div>
               <div className="flex justify-center items-center gap-2">
                 <p className="font-semibold">Street:</p>
-                <input
+                <input disabled={true}
                   type="text"
                   placeholder="Street address"
                   value={streetAddress}
@@ -158,7 +160,7 @@ export default function Profile() {
                 />
               </div>
 
-              <button className=" mx-auto mt-4 mb-8" type="submit">
+              <button className=" mx-auto mt-4 mb-8" type="submit" onClick={()=> toast.success('saved') }>
                 <Toaster position="top-center" />
                 Save
               </button>
@@ -170,14 +172,3 @@ export default function Profile() {
   );
 }
 
-{
-  /* <label>
-<input type="file" className="hidden" />
-<span
-  className="block cursor-pointer border border-gray-900 p-1
- rounded-xl text-center"
->
-  Edit
-</span>
-</label> */
-}

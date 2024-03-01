@@ -5,10 +5,13 @@ import Link from "next/link";
 
 export default function MenuTabs() {
   return (
-    <div className="flex-wrap sm:grid-cols-3 justify-center items-center Menutabs ">
+    <div
+      className="block  md:flex md:flex-row
+    justify-center items-center Menutabs  "
+    >
       <>
         <Link
-          className="text-black flex items-center justify-center gap-2"
+          className="text-black flex items-center justify-center gap-2 "
           href={"/menu"}
         >
           <Pizza />

@@ -7,21 +7,22 @@ export default function Cart() {
   return (
     <div>
       {cartQuantity === 0 ? (
-        <><div></div></>
+        <></>
       ) : (
         <>
-          {" "}
           <div
-            className="absolute translate-x-12 mt-0
-    bg-green-500 rounded-full w-5 h-5 flex items-center 
-    justify-center
-    "
-          >{cartQuantity}</div>
-          <button onClick={openCart}>
+            className="absolute translate-x-12 mt-0 bg-green-500 rounded-full w-5 h-5 flex items-center 
+           justify-center"
+          >
+            {cartQuantity}
+          </div>
+          <div>
             <Link className="w-full" href={"/cart"}>
-              <Shopcart />
+              <button onClick={openCart}>
+                <Shopcart />
+              </button>
             </Link>
-          </button>
+          </div>
         </>
       )}
     </div>

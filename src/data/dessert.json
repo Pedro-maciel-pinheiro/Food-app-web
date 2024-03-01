@@ -2,14 +2,14 @@
 [
     {
         "id":13,
-        "name": "CINNAMON ROLLS",
+        "name": "CINNAMON ROL",
         "price": 14.55,
         "imgUrl":"/imgs/d6.webp"
 
     },
     {
         "id":14,
-        "name": "FUDGE BROWNIES",
+        "name": "FUDGE BROW",
         "price": 7.99,
         "imgUrl":"/imgs/d7.png"
 
@@ -17,7 +17,7 @@
     },
     {
         "id":15,
-        "name": "GARLIC CHEESY",
+        "name": "GARLIC CHEY",
         "price": 16.99,
         "imgUrl":"/imgs/d22.webp"
 
@@ -25,7 +25,7 @@
     },
     {
         "id":16,
-        "name": "JALAPEÑO POPPERS",
+        "name": "JALAPEÑO ",
         "price": 14.99,
         "imgUrl":"/imgs/d1.png"
 
@@ -33,7 +33,7 @@
     },
     {
         "id":17,
-        "name": "PEPPERONI POPPERS",
+        "name": "PEPPERONI ",
         "price": 15.99,
         "imgUrl":"/imgs/d5.png"
 
@@ -41,7 +41,7 @@
     },
     {
         "id":18,
-        "name": "BUFFALO CHICKEN",
+        "name": "BUFFALO CHIN",
         "price": 18.99,
         "imgUrl":"/imgs/d4.webp"
 

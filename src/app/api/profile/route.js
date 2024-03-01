@@ -1,4 +1,3 @@
-
 import {authOptions} from "@/app/api/auth/[...nextauth]/route";
 import {User} from "@/models/User";
 import {UserInfo} from "@/models/UserInfo";
@@ -50,16 +49,3 @@ export async function GET(req) {
   return Response.json({...user, ...userInfo});
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

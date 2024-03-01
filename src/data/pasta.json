@@ -2,7 +2,7 @@
 [
     {
         "id":7,
-        "name": "PASTA  MARINARA ",
+        "name": "PASTA  MARI ",
         "price": 18.99,
         "imgUrl":"/imgs/pasta1.webp"
 
@@ -16,7 +16,7 @@
     },
     {
         "id":9,
-        "name": "PASTA WITH ALFREDO  ",
+        "name": "PASTA ALF  ",
         "price": 11.99,
         "imgUrl":"/imgs/pasta2.webp"
 
@@ -32,7 +32,7 @@
     },
     {
         "id":11,
-        "name": "MEAT EATER",
+        "name": "SALAD",
         "price": 6.99,
         "imgUrl":"/imgs/salads.png"
 
@@ -40,7 +40,7 @@
     },
     {
         "id":12,
-        "name": "BBQ PORK",
+        "name": "SALAD",
         "price": 7.99,
         "imgUrl":"/imgs/salads.png"
 

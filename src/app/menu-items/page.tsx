@@ -9,13 +9,13 @@ import storepasta from "@/data/pasta.json";
 
 export default function MenuItems() {
   return (
-    <section className="max-w-3xl mx-auto mb-8">
+    <section className="max-w-3xl mx-auto mb-8 mt-16 md:mt-1">
       <Tabs isAdmin={"true"} />
       <h1 className="text-center mt-8 text-xl mb-8">All items in Menu</h1>
       <div className="mt-8 mb-2">
         <SectionText subText={""} mainText={"Pizza"} />
       </div>
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 ">
         {storepizza.map((item) => (
           <div key={item.id}>
             <StoreItem {...item} />
@@ -26,7 +26,7 @@ export default function MenuItems() {
         <SectionText subText={""} mainText={"Pasta - Salad"} />
       </div>
 
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 ">
         {storepasta.map((item) => (
           <div key={item.id}>
             <StoreItem {...item} />
@@ -36,7 +36,7 @@ export default function MenuItems() {
       <div className="mt-8 mb-2">
         <SectionText subText={""} mainText={"Dessert"} />
       </div>
-      <div className="grid grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-3  gap-4 ">
         {storedessert.map((item) => (
           <div key={item.id}>
             <StoreItem {...item} />

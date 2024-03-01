@@ -17,7 +17,7 @@ export function CartItem({ id, quantity }: CartItemProps) {
     <>
       <div
         className="border-2 rounded-xl
-      shadow-xl shadow-black/50"
+      shadow-xl shadow-black/50 " 
       >
         <Image
           className="mx-auto"
@@ -40,9 +40,9 @@ export function CartItem({ id, quantity }: CartItemProps) {
             {formatCurrency(item.price * quantity)}
           </div>
 
-          <div className="text-sm  mx-auto w-16">
+          <div className="text-sm  mx-auto w-16 mt-2 mb-2 ">
             <button type="submit" onClick={() => removeFromCart(item.id)}>
-              Remove
+              X
             </button>
           </div>
         </div>

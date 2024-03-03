@@ -5,6 +5,7 @@ import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import Image from "next/image";
 import Cart from "./Cart";
+import { Squash as Hamburger } from 'hamburger-react'
 import { useState } from "react";
 
 export default function Header() {
@@ -13,7 +14,7 @@ export default function Header() {
   const userData = session.data?.user;
   const userName = userData?.email;
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
+  const [isOpen, setOpen] = useState(false)
   return (
     <header
       className="fixed md:relative  md:bg-transparent rounded-xl 
@@ -21,18 +22,18 @@ export default function Header() {
     >
       <div className="">
         <Cart />
-        <button
-          className=" flex  md:hidden  h-11 items-center justify-center"
+        <div
+          className=" flex  md:hidden  h-11 items-center justify-center border-4 rounded-xl"
           onClick={() => setMobileNavOpen((prev) => !prev)}
         >
-          <AlignJustify size={30} className="text-red-500" />
-        </button>
+          <Hamburger toggled={isOpen} toggle={setOpen} />
+        </div>
         {mobileNavOpen && (
           <>
             <div
               onClick={() => setMobileNavOpen(false)}
               className="md:hidden p-4 bg-white/80  transition-all border-2
-        mt-2 rounded-xl flex flex-col gap-4 absolute z-10 font-semibold w-full
+        mt-2 rounded-xl flex flex-col gap-4 absolute z-50 font-semibold w-full
         "
             >
               <Link className="hover:text-orange-500 " href={"/"}>

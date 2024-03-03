@@ -13,19 +13,13 @@ export function ShoppingCart({}: ShoppingCartProps) {
   const { removeFromCart } = useShoppingCart();
   const { closeCart, cartItems } = useShoppingCart();
   return (
-    <>
-      <div>
-        <div
-          className="grid grid-cols-3 gap-8
+    <div
+      className="grid grid-cols-3 gap-8
        items-center justify-center text-center "
-        >
-          {cartItems.map((item) => (
-            <CartItem key={item.id} {...item} />
-          ))}
-        </div>
-
-        
-      </div>
-    </>
+    >
+      {cartItems.map((item) => (
+        <CartItem key={item.id} {...item} />
+      ))}
+    </div>
   );
 }

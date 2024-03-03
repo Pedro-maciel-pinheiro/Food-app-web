@@ -12,8 +12,8 @@ export default function CartIems() {
       <ShoppingCart isOpen={false} />
       <div>
         <div
-          className="flex items-center justify-center 
-         font-semibold text-xl mt-16 border-t"
+          className="grid grid-cols-3  justify-center 
+         font-semibold text-xl mt-16 border-t "
         >
           Total :
           {formatCurrency(
